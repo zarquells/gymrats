@@ -1,0 +1,151 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+.img-background-home {
+    background-image: url("../../img/Background/img_intro.png");
+    background-size: cover;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12vh 0px 16vh;
+    text-align: center;
+}
+
+.txt {
+    max-width: 350px;
+    margin-bottom: 32px;
+}
+
+#planos-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6vh 4vh;
+}
+
+.planos {
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 4vh;
+    gap: 5vw;
+}
+
+.bronze, .prata, .ouro {
+    background-size: cover;
+    background-position: center;
+    padding: 4vh 2vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 16vw;
+}
+
+.beneficios {
+    margin: 3vh 0px 3vh;
+}
+
+.bronze p, .prata p, .ouro p {
+    font-family: "Darker Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 2vh;
+}
+
+.bronze {
+    background-image: url("../../img/Background/bronze-fundo.png");
+}
+
+.prata {
+    background-image: url("../../img/Background/prata-fundo.png");
+}
+
+.ouro {
+    background-color: #46FF29;
+
+    img {
+        padding: 0px 0px 15px 0px;
+    }
+}
+
+.sobre-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    position: relative;
+}
+
+.confira {
+    margin: 8vh 4vw -40vh;
+    img {
+        max-width: 65vw;
+    }
+}
+
+.btn-home {
+    background: rgb(45,28,68);
+    background: linear-gradient(180deg, rgba(45,28,68,1) 35%, rgba(54,23,98,1) 100%);
+    border: 0;
+    padding: 5px 10px;
+}
+.btn-home:hover{
+    cursor: pointer;
+    
+}
+
+@media (max-width: 500px) {
+    .planos {
+        flex-direction: column;
+    }
+
+    .bronze, .prata, .ouro {
+        width: 72vw;
+    }
+
+    .sobre-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .confira {
+        margin: 4vh 4vw 0vh 4vw;
+
+        img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .bronze, .prata, .ouro {
+        max-width: 72vw;
+    }
+
+    .sobre-info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .confira {
+        margin: 4vh 4vw 0vh 4vw;
+
+        img {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 920px) {
+    .sobre-info {
+    left: 50%;
+    transform: translate(-50%, -140%);
+    }
+}

@@ -1,0 +1,240 @@
+.login-all {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.login-right {
+  background-image: linear-gradient(180deg, #2c1650, #190b30, #030105);
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1.2px 0 1.5px lightslategray;
+}
+
+.login-right-box {
+  background-image: linear-gradient(360deg, #632eb5, #10071f);
+  font-family: "Darker Grotesque", sans-serif;
+  color: white;
+  border: 1px solid #9b9b9b;
+  border-radius: 10px;
+  padding: 1.5em;
+  position: relative;
+  z-index: 1;
+  max-width: 40%;
+}
+
+.login-right-box::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/Background/bg-form.png");
+  border-radius: 10px;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#login-solcred {
+  font-size: 19px;
+  text-align: left;
+  display: flex;
+  margin-top: -0.3em;
+}
+
+.login-right-box-content > h2 > #bracao > img {
+  width: 1.2em;
+  margin-left: 0.3em;
+}
+
+.login-right-box p {
+  font-size: 18px;
+  text-align: center;
+  margin: 1em 0;
+}
+
+.login-right-box hr {
+  border-color: #632EB5;
+  margin-top: 1em;
+  width: 100%;
+}
+
+#login-flogo {
+  width: 5em;
+}
+
+#login-ftitle {
+  text-transform: capitalize;
+  margin-bottom: 0.5em;
+  font-size: 24px;
+  margin-right: 1em;
+}
+
+#login-bracao {
+  display: flex;
+  align-items: center;
+}
+
+.login-ent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.33em;
+}
+
+.login-ent label {
+  font-size: 18px;
+}
+
+.login-ent input {
+  padding: 0.65em;
+}
+
+.login-button {
+  background: var(--cor-5);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 1em;
+}
+
+#login-link-form {
+  text-decoration: none;
+}
+
+#login-link-form:hover {
+  text-decoration: underline;
+}
+
+.login-cab {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .login-right {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .login-right-box {
+    margin-top: 2.5em;
+    height: 70%;
+    max-width: 65%;
+  }
+
+  .login-right-box-content {
+    margin: auto;
+    width: 80%;
+    max-height: 50%;
+  }
+
+  #login-cadastro > hr {
+    width: 100%;
+    border: 1px solid #632eb5;
+    margin-top: 2em;
+  }
+
+  #login-solcred {
+    font-size: 1.7em;
+  }
+
+  #login-flogo {
+    width: 9em;
+  }
+
+  #login-ftitle {
+    margin-top: 0.7em;
+    font-family: "Days One", sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+  }
+
+  .login-right-box p {
+    margin: 2em 0;
+    font-size: 1.7rem;
+  }
+
+  .login-ent label {
+    font-size: 1.65rem;
+  }
+
+  .login-ent input {
+    font-size: 1.3rem;
+  }
+
+  .login-button {
+    padding: 1em;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+
+  .login-cab {
+    display: none;
+  }
+}
+
+.cadastro_buttonn {
+  height: 30px;
+}
+
+@media screen and (max-width: 468px) {
+  .login-right {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .login-right-box {
+    margin-top: 0.4em;
+    height: 80%;
+    max-width: 80%;
+  }
+
+  .login-right-box-content {
+    margin: auto;
+    width: 95%;
+  }
+
+  #login-cadastro > hr {
+    width: 100%;
+    border: 1px solid #632eb5;
+    margin-top: 2em;
+  }
+
+  #login-flogo {
+    width: 5.5em;
+  }
+
+  #login-ftitle {
+    margin-top: 0.7em;
+    font-family: "Days One", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+  }
+
+  .login-right-box p {
+    margin: 2em 0;
+    font-size: 19px;
+  }
+
+  .login-ent label {
+    font-size: 20px;
+  }
+
+  .login-ent input {
+    font-size: 18px;
+    padding: 0.5rem;
+  }
+
+  .login-button {
+    padding: 0.65em;
+    font-size: 16px;
+  }
+
+  .login-cab {
+    display: none;
+  }
+}

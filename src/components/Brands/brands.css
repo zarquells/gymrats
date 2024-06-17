@@ -1,0 +1,48 @@
+.brand-cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 6vh;
+    text-align: center
+}
+
+
+.marcas {
+    display: flex;
+    justify-content: center;
+    gap: 6vw;
+    margin-top: 4vh;
+    
+    img {
+        max-height: 40px;
+        margin: 10px 20px
+    }   
+}
+
+@media (max-width: 500px) {
+    .marcas {
+        img {
+            max-height: 5px;
+            margin: 2px
+        }   
+    }
+}
+
+@media (max-width: 600px) {
+    .marcas {
+        img {
+            max-height: 12px;
+            margin: 5px
+        }   
+    }
+}
+
+@media (max-width: 800px) {
+    .marcas {
+        margin: 0px 8px;
+        img {
+            max-height: 16px;
+            margin: 7px 10px
+        }   
+    }
+}
